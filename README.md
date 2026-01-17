@@ -1,5 +1,6 @@
 ## ☂️🌂🌞 Train Test 🌞🌂☂️
 - Standard Benchmarking: The Iris dataset is a built-in toy dataset within SKLearn, making it easily accessible for testing algorithms without external files. It contains measurements for 150 iris flowers across three different species: setosa, versicolor, and virginica.
+- Feature Composition: Each sample in the dataset consists of four numerical features: sepal length, sepal width, petal length, and petal width. These features are stored in a NumPy array, allowing for efficient mathematical operations during the training process.
 - Split the dataset using the Train Test Split function from the SKLearn library.
 
 ```
