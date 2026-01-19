@@ -7,6 +7,7 @@
 - Split the dataset using the Train Test Split function from the SKLearn library.
 - Preventing Overfitting: The primary goal of splitting data is to ensure your model generalizes well to new, unseen data. If you train and test on the same data, the model might simply "memorize" the answers (overfitting) rather than learning the underlying patterns.
 - The 80/20 Rule: A common convention is to use 80% of the data for training and 20% for testing. For a small dataset like Iris (150 samples), this gives you 120 samples to learn from and 30 samples to validate the model's accuracy.
+- Reproducibility with random_state: Since the split is randomized, your results could change every time you run the code. By setting a random_state (e.g., random_state=42), you ensure the split is identical every time, which is vital for debugging and comparing different models.
 
 ```
 import sklearn
