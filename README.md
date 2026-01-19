@@ -5,6 +5,7 @@
 - Dictionary-Like Structure: When you call load_iris(), the data is returned as a "Bunch" object, which behaves similarly to a Python dictionary. You can access the raw data using keys like .data for features and .target for the classification labels.
 - Data Exploration: Because the dataset is small and balanced, it is ideal for visualizing how different classes overlap in feature space. Analysts often use this data to practice scatter plots and pair plots before moving to more complex sets.
 - Split the dataset using the Train Test Split function from the SKLearn library.
+- Preventing Overfitting: The primary goal of splitting data is to ensure your model generalizes well to new, unseen data. If you train and test on the same data, the model might simply "memorize" the answers (overfitting) rather than learning the underlying patterns.
 
 ```
 import sklearn
