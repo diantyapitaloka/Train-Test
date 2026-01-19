@@ -12,6 +12,7 @@
 - Shuffle by Default: By default, train_test_split shuffles the data before splitting. This is crucial for Iris because the raw dataset is often ordered by species; without shuffling, your training set might contain only two species, while the test set contains only the third, leading to a total model failure.
 - Four-Way Output Unpacking: The train_test_split function returns four distinct subsets in a specific order: X_train, X_test, y_train, and y_test. It is critical to unpack them in this exact order to avoid feeding your labels into the feature processor or vice-versa.
 - Feature Scaling Sensitivity: If you plan to use algorithms like SVM or K-Nearest Neighbors, you must split your data before applying scalers (like StandardScaler). You should "fit" the scaler only on the training set to prevent "data leakage," where information from the test set sneaks into the training process.
+- The Validation Set Extension: For more complex projects, a two-way split isn't enough. You often split the data into three parts: Training (to build the model), Validation (to tune hyperparameters), and Testing (the final "gold standard" check). With Iris, this might look like a 60/20/20 split.
 
 ```
 import sklearn
