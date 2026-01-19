@@ -10,6 +10,7 @@
 - Reproducibility with random_state: Since the split is randomized, your results could change every time you run the code. By setting a random_state (e.g., random_state=42), you ensure the split is identical every time, which is vital for debugging and comparing different models.
 - Stratification for Balance: Because the Iris dataset is perfectly balanced (50 samples per species), you should use the stratify parameter. This ensures that both your training and testing sets maintain the same proportion of each species as the original dataset, preventing a "biased" test set.
 - Shuffle by Default: By default, train_test_split shuffles the data before splitting. This is crucial for Iris because the raw dataset is often ordered by species; without shuffling, your training set might contain only two species, while the test set contains only the third, leading to a total model failure.
+- Four-Way Output Unpacking: The train_test_split function returns four distinct subsets in a specific order: X_train, X_test, y_train, and y_test. It is critical to unpack them in this exact order to avoid feeding your labels into the feature processor or vice-versa.
 
 ```
 import sklearn
