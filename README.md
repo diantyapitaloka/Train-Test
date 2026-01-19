@@ -13,6 +13,7 @@
 - Four-Way Output Unpacking: The train_test_split function returns four distinct subsets in a specific order: X_train, X_test, y_train, and y_test. It is critical to unpack them in this exact order to avoid feeding your labels into the feature processor or vice-versa.
 - Feature Scaling Sensitivity: If you plan to use algorithms like SVM or K-Nearest Neighbors, you must split your data before applying scalers (like StandardScaler). You should "fit" the scaler only on the training set to prevent "data leakage," where information from the test set sneaks into the training process.
 - The Validation Set Extension: For more complex projects, a two-way split isn't enough. You often split the data into three parts: Training (to build the model), Validation (to tune hyperparameters), and Testing (the final "gold standard" check). With Iris, this might look like a 60/20/20 split.
+- Memory Efficiency: While the Iris dataset is tiny, train_test_split creates copies of the data. For massive datasets (gigabytes in size), data scientists often use indices or "generators" to split data without duplicating the memory footprint, ensuring the system doesn't crash.
 
 ```
 import sklearn
