@@ -6,6 +6,7 @@
 - Data Exploration: Because the dataset is small and balanced, it is ideal for visualizing how different classes overlap in feature space. Analysts often use this data to practice scatter plots and pair plots before moving to more complex sets.
 - Split the dataset using the Train Test Split function from the SKLearn library.
 - Preventing Overfitting: The primary goal of splitting data is to ensure your model generalizes well to new, unseen data. If you train and test on the same data, the model might simply "memorize" the answers (overfitting) rather than learning the underlying patterns.
+- The 80/20 Rule: A common convention is to use 80% of the data for training and 20% for testing. For a small dataset like Iris (150 samples), this gives you 120 samples to learn from and 30 samples to validate the model's accuracy.
 
 ```
 import sklearn
