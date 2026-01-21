@@ -33,6 +33,7 @@ iris = datasets.load_iris()
 ## ☂️🌂🌞 Separate Attributes and Labels on Dataset Slices 🌞🌂☂️
 - The iris dataset from the Sklearn library cannot be directly used by an ML model.
 - In accordance with what was discussed in the previous module, we must separate attributes and labels in the dataset.
+- No Missing Values: It is a "clean" dataset with no missing data points, making it perfect for beginners to practice model building immediately.
   
 ```
 x=iris.data
