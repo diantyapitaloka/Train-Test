@@ -15,6 +15,7 @@
 - The Validation Set Extension: For more complex projects, a two-way split isn't enough. You often split the data into three parts: Training (to build the model), Validation (to tune hyperparameters), and Testing (the final "gold standard" check). With Iris, this might look like a 60/20/20 split.
 - Memory Efficiency: While the Iris dataset is tiny, train_test_split creates copies of the data. For massive datasets (gigabytes in size), data scientists often use indices or "generators" to split data without duplicating the memory footprint, ensuring the system doesn't crash.
 - Checking the Shape: A mandatory "sanity check" after splitting is to use the .shape attribute on your new arrays. For an 80/20 split on Iris, you should verify that X_train.shape returns (120, 4) and X_test.shape returns (30, 4), ensuring no rows were lost in the process.
+- Multiclass Classification: Because there are three species to predict, it is a classic example of a multiclass classification problem rather than a binary one.
 
 ```
 import sklearn
