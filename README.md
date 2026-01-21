@@ -26,6 +26,7 @@ from sklearn import datasets
 - The sklearn library provides the iris dataset, which is a dataset that is commonly used for classification problems.
 - This dataset has 150 samples.
 - Three Target Classes: The dataset contains three species of iris flowers: Iris setosa, Iris virginica, and Iris versicolor (50 samples each).
+- Historical Significance: Introduced by British biologist Ronald Fisher in 1936, it remains one of the most famous datasets in the history of statistics and machine learning.
 
 ```
 iris = datasets.load_iris()
