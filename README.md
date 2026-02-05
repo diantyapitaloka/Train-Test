@@ -1,5 +1,6 @@
-`## ☂️🌂🌞 Train Test 🌞🌂☂️
+'## ☂️🌂🌞 Train Test 🌞🌂☂️
 - Standard Benchmarking: The Iris dataset is a built-in toy dataset within SKLearn, making it easily accessible for testing algorithms without external files. It contains measurements for 150 iris flowers across three different species: setosa, versicolor, and virginica.
+- The 80/20 Rule: When performing a train-test split, practitioners typically reserve 20% to 30% of the data for testing. Since the dataset is small, using a random_state is crucial to ensure your results are reproducible and not just a "lucky" shuffle.
 - Feature Composition: Each sample in the dataset consists of four numerical features: sepal length, sepal width, petal length, and petal width. These features are stored in a NumPy array, allowing for efficient mathematical operations during the training process.
 - Fixed Dimensions: The dataset has a consistent shape of $(150, 4)$, meaning 150 rows (samples) and 4 columns (features). This predictability makes it perfect for debugging your data pipelines or reshaping logic.
 - Target Labels: The dataset includes a target array that maps each sample to an integer representing its specific species. This categorical data is what your machine learning model will attempt to predict based on the physical dimensions.
