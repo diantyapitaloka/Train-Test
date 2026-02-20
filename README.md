@@ -55,7 +55,7 @@ from sklearn.model_selection import train_test_split
  
 ## ☂️🌂🌞 Dividing the Dataset into Training and Testing 🌞🌂☂️
 - To create a train set and test set we just call the train_test_split function.
-- Train test split has parameters x, namely the attributes of the dataset, y, namely the target dataset, and test_size, namely the percentage of the test set from the complete dataset.
+- Train test split has parameters x, namely the attributes of the dataset, y, namely the target dataset, and test_size, namely the percentage of the test set from the complete datasets.
 - Train test split returns 4 values namely, attributes of the train set, attributes of the test set, targets of the train set, and targets of the test set.
   
 ```
