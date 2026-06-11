@@ -88,7 +88,7 @@ y_test = train_test_split(x, y, test_size=0.2, random_state=1)
 ```
 
 ## ☂️🌂🌞 Calculate The Length or Amount of Data in Each Split Directory 🌞🌂☂️
-- When we print the length of x_test, we can see that the length of the test set attribute is 30 samples, according to the parameters we entered in the train_test_split function, namely 0.2 or 20% of 150 samples.
+- When we print the length of x_test, we can see that the length of the test set attribute is 30 samples, hence according to the parameters we entered in the train_test_split function, namely 0.2 or 20% of 150 samples.
 - The code to print the length of x_test is as below.
   
 ```
